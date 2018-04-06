@@ -27,7 +27,7 @@
   "dependencies": {
     "bcrypto": "~0.2.0",
     "bsip": "~0.0.2",
-    "bufio": "~0.0.3"
+    "bufio": "~0.1.0"
   },
   "devDependencies": {
     "babelify": "^8.0.0",
