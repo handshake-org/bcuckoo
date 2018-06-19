@@ -6,13 +6,13 @@
 const assert = require('assert');
 const {Cuckoo, Miner, Solution} = require('../lib/cuckoo');
 
-function testCuckoo(bits, size, ease, header, nonces) {
-  testVerify(bits, size, ease, header, nonces);
-  testMiner(bits, size, ease, header, nonces);
+function testCuckoo(bits, size, perc, header, nonces) {
+  testVerify(bits, size, perc, header, nonces);
+  testMiner(bits, size, perc, header, nonces);
 }
 
-function testVerify(bits, size, ease, header, nonces) {
-  const cycle = new Cuckoo(bits, size, ease, true);
+function testVerify(bits, size, perc, header, nonces) {
+  const cycle = new Cuckoo(bits, size, perc, true);
 
   {
     const sol = Solution.fromArray(nonces);
@@ -30,15 +30,15 @@ function testVerify(bits, size, ease, header, nonces) {
 
   {
     const bbits = bits === 32 ? 1 : bits + 1;
-    const cycle = new Cuckoo(bbits, size, ease, true);
+    const cycle = new Cuckoo(bbits, size, perc, true);
     const key = cycle.sipkey(header);
     const code = cycle.verify(key, nonces);
     assert.notStrictEqual(Cuckoo.code(code), 'POW_OK');
   }
 }
 
-function testMiner(bits, size, ease, header, nonces) {
-  const miner = new Miner(bits, size, ease, true);
+function testMiner(bits, size, perc, header, nonces) {
+  const miner = new Miner(bits, size, perc, true);
 
   {
     let sol = null;
