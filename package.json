@@ -10,10 +10,10 @@
     "siphash"
   ],
   "license": "MIT",
-  "repository": "git://github.com/bcoin-org/bcuckoo.git",
-  "homepage": "https://github.com/bcoin-org/bcuckoo",
+  "repository": "git://github.com/handshake-org/bcuckoo.git",
+  "homepage": "https://github.com/handshake-org/bcuckoo",
   "bugs": {
-    "url": "https://github.com/bcoin-org/bcuckoo/issues"
+    "url": "https://github.com/handshake-org/bcuckoo/issues"
   },
   "author": "Christopher Jeffrey <chjjeffrey@gmail.com>",
   "main": "./lib/bcuckoo.js",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "bcrypto": "~1.0.0",
-    "bsert": "~0.0.3",
+    "bsert": "~0.0.4",
     "bsip": "~0.1.1",
     "bufio": "~1.0.1"
   },
