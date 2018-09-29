@@ -1,6 +1,6 @@
 {
   "name": "bcuckoo",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Cuckoo Cycle verification and miner in pure javascript",
   "keywords": [
     "blake2b",
