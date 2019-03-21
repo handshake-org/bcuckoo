@@ -1,6 +1,6 @@
 {
   "name": "bcuckoo",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Cuckoo Cycle verification and miner in pure javascript",
   "keywords": [
     "blake2b",
@@ -22,10 +22,10 @@
     "test": "bmocha --reporter spec test/*-test.js"
   },
   "dependencies": {
-    "bcrypto": "~3.0.2",
-    "bsert": "~0.0.9",
-    "bsip": "~0.1.5",
-    "bufio": "~1.0.5"
+    "bcrypto": "~3.0.3",
+    "bsert": "~0.0.10",
+    "bsip": "~0.1.6",
+    "bufio": "~1.0.6"
   },
   "devDependencies": {
     "bmocha": "^2.1.0"
